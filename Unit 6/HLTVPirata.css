@@ -1,0 +1,73 @@
+body {
+  background-color: rgb(229, 231, 234);
+}
+
+#cabecalho {
+  color: white;
+  background-color: #111D4A ;
+  margin-top: 0;
+  height: 80px;
+  font-family: Staatliches;
+  font-size: 70px;
+  padding-left: 20px;
+}
+
+.noticia {
+  height: 1200px;
+  width: 60%;
+  margin: auto;
+  border: 5px solid lightgrey;
+}
+
+.noticia h2 {
+  text-align: center;
+  font-family: Oswald;
+  border-bottom: 3px solid lightgrey;
+  color: #2d6da3;
+  font-size: 36px;
+  padding: 10px;
+}
+
+.noticia h4 {
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px;
+  font-family: sans-serif;
+  color: gray;
+}
+
+.noticia .call {
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 0 10px;
+  text-align: justify;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.noticia p {
+  margin: 5px 0 5px 0;
+  padding: 0 10px;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 22.652px;
+}
+
+img {
+  width: 80%;
+  padding-left: 60px;
+  margin-bottom: 0;
+}
+
+.noticia .caption {
+  text-align: center;
+  font-style: italic;
+}
+
+.noticia .citation {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+}

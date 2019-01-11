@@ -1,0 +1,45 @@
+/* font family */
+p {
+  font-family: Roboto Mono Thin;
+}
+
+h1 {
+  font-family: Roboto Mono;
+}
+
+/* font size */
+h1 {
+  font-size: 5.0em;
+}
+
+span {
+  font-size: 2em;
+}
+
+p {
+  font-size: 20px;
+}
+
+body {
+  font-size: 10px;
+}
+
+/* font weight */
+p {
+  font-weight: 800;
+}
+
+/* line height */
+p {
+  line-height: 1.5;
+}
+
+/* text align */
+h1 {
+  text-align: center;
+}
+
+/* text decoration */
+p {
+  text-decoration: underline;
+}

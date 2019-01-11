@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms Exercise</title>
+  </head>
+  <body>
+    <h1>Register</h1>
+
+    <form class="" action="" method="get">
+      <div>
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" value="" id="firstName" placeholder="John" required>
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" value="" id="lastName" placeholder="Smith" required>
+      </div>
+
+      <div>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="female" id="female">
+        <label for="other">Other</label>
+        <input type="radio" name="gender" value="other" id="other">
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" value="" id="email" placeholder="your email" required>
+        <label for="password">Password:</label>
+        <input type="password" name="password" value="" id="password" placeholder="your password" pattern=".{8,}" required title="8 chars minimum">
+      </div>
+
+      <div>
+        <label for="selecao">Birthday:</label>
+        <select class="" name="month" id="selecao">
+          <option value="">Month</option>
+          <option value="">1</option>
+          <option value="">12</option>
+        </select>
+        <select class="" name="day" id="">
+          <option value="">Day</option>
+          <option value="">16</option>
+          <option value="">23</option>
+        </select>
+        <select class="" name="year" id="">
+          <option value="">Year</option>
+          <option value="">1984</option>
+          <option value="">198X</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="checkbocz">I agree to the terms and conditions </label>
+        <input type="checkbox" name="t&c" value="" id="checkbocz">
+      </div>
+
+      <button type="button" name="button">Submit</button>
+
+
+    </form>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+h1 {
+  text-align: center;
+}
+
+table {
+  margin: 1em auto;
+}
+
+td {
+  width: 100px;
+  height: 100px;
+}
+
+#first{
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+#second {
+  border-bottom: 1px solid black;
+}
+
+#third {
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+
+#fourth {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#fifth {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+#sixth {
+  border-bottom: 1px solid black;
+}
+
+#eigth {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
