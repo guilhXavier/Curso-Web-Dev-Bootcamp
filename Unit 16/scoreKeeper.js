@@ -1,28 +1,30 @@
-var pointsOne = 0, pointsTwo = 0;
+alert("Connected!");
 
-document.querySelector("h1").innerHTML = pointsOne + " to  "+ pointsTwo;
+var btP1 = document.querySelector("#playerOne");
+var btP2 = document.querySelector("#playerTwo");
+var p1Display = document.querySelector("#p1Display");
+var p2Display = document.querySelector("#p2Display");
+var p1Score = 0;
+var p2Score = 0;
+var gameOver = false;
+var winningScore = 5;
 
-function changeScore () {
-    var point = false;
-    if (p1) {
-        point = true;
-    } else if (p2) {
-        point = false;
+btP1.addEventListener("click", function() {
+    if(!gameOver) {
+        p1Score++;
+        if(p1Score == winningScore) {
+            gameOver = true;
+        }
     }
-    var s = "";
-    if (point) {
-        pointsOne++;
-    } else {
-        pointsTwo++;
+});
+
+btP2.addEventListener("click", function() {
+    if(!gameOver) {
+        p2Score++;
+        p2Display.textContent = p1Score;
+        if(p2Score == winningScore) {
+            gameOver = true;
+        }
+        p2Display.textContent = p2Score;
     }
-    s = pointsOne + " to " + pointsTwo;
-    return s;
-}
-
-var p1 = document.getElementById("playerOne");
-var p2 = document.getElementById("playerTwo");
-
-p1.addEventListener("click", changeScore);
-p2.addEventListener("click", changeScore);
-document.querySelector("h1").innerHTML = pointsOne + " to  "+ pointsTwo;
-
+});
