@@ -1,18 +1,23 @@
 var Express = require("express");
 var app = Express();
+var bodyParser = require("body-parser");
 
+app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
+
+let friends = [ "Tony", "Miranda", "Justin", "Pierre", "Lily" ];
 
 app.get("/", function(req, res) {
   res.render("home");
 });
 
 app.post("/addfriend", function(req, res) {
-  res.send("you have reached the post route");
+  let newFriend = req.body.newfriend;
+  friends.push(newFriend);
+  res.redirect("/friends");
 });
 
 app.get("/friends", function(req, res) {
-  let friends = [ "Tony", "Miranda", "Justin", "Pierre", "Lily" ];
   res.render("friends", { friends: friends });
 });
 
