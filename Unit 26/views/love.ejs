@@ -1,1 +1,14 @@
-<h1>You fell in love with: </h1>
+<% include partials/header%>
+
+<h1>You fell in love with: <%= thingLet %> </h1>
+
+<% if (thingLet.toLowerCase() === "rusty") {%>
+  <p>GOOD CHOICE!</p>
+<% } else { %>
+  <p>BAD CHOICE!</p>
+<% } %>
+<p>
+  This is the love.ejs file!
+</p>
+
+<% include partials/footer %>
