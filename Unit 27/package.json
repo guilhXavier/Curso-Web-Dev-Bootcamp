@@ -1,0 +1,11 @@
+{
+  "name": "request-exercise",
+  "version": "1.0.0",
+  "description": "request api exercise",
+  "main": "first_request.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "guilhXavier",
+  "license": "ISC"
+}
