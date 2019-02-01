@@ -32,7 +32,7 @@ Cat.create({
 }, function(err, cat) {
     if (err) {
         console.log("SOMETHING WENT WRONG!");
-        console.log(err)
+        console.log(err);
     } else {
       console.log("A CAT WAS SAVED TO THE DB");
       console.log(cat);
