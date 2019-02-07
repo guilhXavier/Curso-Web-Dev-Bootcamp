@@ -25,15 +25,49 @@ app.get("/", function(req, res) {
     res.redirect("/blogs");
 });
 
+// index route
 app.get("/blogs", function(req, res) {
     Blog.find({}, function(err, blogs) {
-        console.log(typeof req.next);
         if (err) {
             console.log("ERROR!");
         } else {
             res.render("index", { blogs: blogs });
         }
     });
+});
+
+// new route
+app.get("/blogs/new", function(req, res) {
+    res.render("new");
+});
+
+// create route
+app.post("/blogs", function(req, res) {
+    // create blog
+    Blog.create(req.body.blog, function(err, newBlog) {
+        if (err) {
+            res.render("new");
+        } else {
+            // then redirect to index
+            res.redirect("/blogs");
+        }
+    });
+});
+
+// show route
+app.get("/blogs/:id", function(req, res) {
+    Blog.findById(req.params.id, function(err, foundBlog) {
+        if (err) {
+            res.redirect("/blogs");
+        } else {
+            res.render("show", { blog: foundBlog });
+        }
+    });
+});
+
+// edit route
+app.get("/blogs/:id/edit", function(req, res) {
+    res.render("edit");
 });
 
 app.listen(5000, () => {
